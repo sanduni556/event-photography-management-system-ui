@@ -1,1 +1,1 @@
-// Add JS here
+console.log("main.js is linked correctly!");
