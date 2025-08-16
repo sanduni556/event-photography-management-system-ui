@@ -1,0 +1,161 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: var(--secondary-light-gray); /* Use variable for background */
+    color: var(--text-secondary); /* Use variable for default text color */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-primary); /* Use variable for headings */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--secondary-white) !important; /* Use variable for navbar background */
+}
+
+.navbar-brand {
+    color: var(--primary-deep-blue) !important; /* Use variable for brand color */
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: var(--secondary-charcoal-gray) !important; /* Use variable for nav link color */
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-deep-blue) !important; /* Use variable for nav link hover color */
+}
+
+.navbar-nav .nav-item .btn-dark {
+    background-color: var(--primary-deep-blue); /* Use variable for button background */
+    border-color: var(--primary-deep-blue); /* Use variable for button border */
+    color: var(--secondary-white); /* Use variable for button text */
+}
+
+.navbar-nav .nav-item .btn-dark:hover {
+    background-color: var(--secondary-charcoal-gray); /* Use variable for button hover background */
+    border-color: var(--secondary-charcoal-gray); /* Use variable for button hover border */
+}
+
+
+/* Hero Section */
+.hero-section {
+    background-image: url('../img/home-banner.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay to make text readable */
+    z-index: -1;
+}
+
+.hero-section h1 {
+    color: var(--secondary-white); /* Use variable for heading color */
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-section .lead {
+    color: var(--secondary-white); /* Use variable for lead text color */
+}
+
+.hero-section .btn-primary {
+    color: var(--secondary-white); /* Button text should contrast better */
+    font-weight: bold;
+}
+
+.hero-section .btn-primary:hover {
+    background-color: #1976d2; /* Darker shade of info blue */
+    border-color: #1976d2;
+}
+
+
+/* Services Section */
+.services-section .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--secondary-white); /* Use variable for card background */
+}
+
+.services-section .card-title {
+    color: var(--secondary-charcoal-gray); /* Use variable for card title color */
+}
+
+.services-section .card-text {
+    color: var(--text-secondary); /* Use variable for card text color */
+}
+
+.services-section .fa-3x {
+    color: var(--primary-deep-blue); /* Use variable for icon color */
+}
+
+
+/* Call to Action Section */
+.cta-section {
+    background-color: var(--primary-deep-blue); /* Use variable for CTA background */
+    color: var(--secondary-white); /* Use variable for CTA text color */
+}
+
+.cta-section h2 {
+    color: var(--secondary-white); /* Use variable for CTA heading color */
+}
+
+.cta-section .btn-dark {
+    background-color: var(--interactive-info-blue); /* Use variable for button background */
+    border-color: var(--interactive-info-blue); /* Use variable for button border */
+    color: var(--secondary-white); /* Use variable for button text */
+    font-weight: bold;
+}
+
+.cta-section .btn-dark:hover {
+    background-color: #1976d2; /* Darker shade of info blue */
+    border-color: #1976d2;
+}
+
+
+/* Footer */
+.footer {
+    background-color: var(--secondary-light-gray); /* Use variable for footer background */
+    color: var(--text-muted); /* Use variable for footer text color */
+}
+
+.footer a {
+    color: var(--text-muted); /* Use variable for footer link color */
+}
+
+.footer a:hover {
+    color: var(--text-secondary); /* Use variable for footer link hover color */
+}
+
+.footer .social-icons a {
+    font-size: 1.5rem;
+}
+
+.footer .list-inline-item a {
+    padding: 0 10px;
+    border-right: 1px solid var(--text-muted);
+}
+
+.footer .list-inline-item:last-child a {
+    border-right: none;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+}

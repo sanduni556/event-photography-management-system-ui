@@ -14,9 +14,10 @@
 **Technical Stack:**
 *   **Color Palette:** Implement the provided color palette with CSS variables for consistency and easy management.
 *   **Frontend:** Utilize the custom color palette throughout the UI by overriding Bootstrap's default color classes with the theme colors in the CSS file.
-*   
+    *   A new CSS file `/css/variables.css` has been created to store CSS variables and common styles.
+*   `/css/style.css` has been moved into the `css` folder.
     *   HTML5: Structure of the web page.
-    *   CSS3: Styling and layout, utilizing Bootstrap for responsive design and pre-built components.
+    *   CSS3: Styling and layout, utilizing Bootstrap for responsive design and pre-built components. All custom CSS files are located in the `css` folder.
     *   JavaScript: Handling user interactions, applying formatting logic, communicating with backend (if necessary), and generating the final output.
     *   Bootstrap: Frontend framework for responsive design and UI components.
     *   Syntax Highlighting Library (e.g., Prism.js, highlight.js): To apply syntax highlighting to the code.

@@ -1,0 +1,58 @@
+:root {
+    /* Primary Colors (Brand Identity) */
+    --primary-deep-blue: #0A2540; /* Primary actions, headers, navbars */
+
+    /* Secondary Colors (Support & Backgrounds) */
+    --secondary-light-gray: #F5F6FA; /* Page backgrounds, cards */
+    --secondary-charcoal-gray: #2C2C2C; /* Text headers, dark mode accents */
+    --secondary-white: #FFFFFF; /* Content areas, modals, forms */
+
+    /* Interactive Colors (Feedback & Status) */
+    --interactive-success-green: #28A745; /* Success messages, confirmed bookings */
+    --interactive-warning-orange: #FF9800; /* Pending payments, alerts */
+    --interactive-error-red: #E63946; /* Validation errors, cancellations */
+    --interactive-info-blue: #2196F3; /* Info messages, notifications */
+
+    /* Text Colors */
+    --text-primary: #1A1A1A; /* Headings */
+    --text-secondary: #4A4A4A; /* Normal text */
+    --text-muted: #7D7D7D; /* Hints, placeholders */
+
+    /* Bootstrap 5 Overrides */
+    --bs-body-bg: var(--secondary-light-gray);
+    --bs-body-color: var(--text-secondary);
+
+    --bs-primary: var(--primary-deep-blue);
+    --bs-secondary: var(--secondary-charcoal-gray);
+    --bs-success: var(--interactive-success-green);
+    --bs-warning: var(--interactive-warning-orange);
+    --bs-danger: var(--interactive-error-red);
+    --bs-info: var(--interactive-info-blue);
+
+    --bs-light: var(--secondary-light-gray);
+    --bs-dark: var(--secondary-charcoal-gray);
+
+    --bs-link-color: var(--primary-deep-blue);
+    --bs-link-hover-color: #07305d; /* darker shade of deep blue */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    background-color: var(--secondary-light-gray);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-primary);
+}
+
+/* Example Button Overrides */
+.btn-primary {
+    background-color: var(--primary-deep-blue);
+    border-color: var(--primary-deep-blue);
+}
+.btn-primary:hover {
+    background-color: #07305d; /* darker shade */
+    border-color: #07305d;
+}
