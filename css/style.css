@@ -104,12 +104,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Call to Action Section */
 .cta-section {
-    background-color: var(--primary-deep-blue); /* Use variable for CTA background */
-    color: var(--secondary-white); /* Use variable for CTA text color */
+    color: black; /* Changed CTA text color to black */
 }
 
 .cta-section h2 {
-    color: var(--secondary-white); /* Use variable for CTA heading color */
+    color: var(--primary-deep-blue); /* Use variable for CTA heading color */
 }
 
 .cta-section .btn-dark {
