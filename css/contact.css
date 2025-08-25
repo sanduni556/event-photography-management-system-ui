@@ -1,0 +1,111 @@
+.contact-page .container {
+    max-width: 1200px;
+}
+
+.contact-section {
+    background-color: var(--secondary-white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact-section h1 {
+    color: var(--text-primary);
+    margin-bottom: 15px;
+}
+
+.contact-section p {
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+.contact-form .form-label {
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+.contact-form .form-control {
+    border-color: var(--text-muted);
+}
+
+.contact-form .btn-primary {
+    background-color: var(--primary-deep-blue);
+    border-color: var(--primary-deep-blue);
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #07305d; /* darker shade */
+    border-color: #07305d;
+}
+
+.contact-image {
+    /* Placeholder styles for the image column */
+    background-color: #ccc; /* Light grey background */
+    min-height: 300px; /* Ensure the placeholder has some height */
+    border-radius: 8px;
+}
+
+.location-section {
+    margin-top: 40px;
+}
+
+.location-section h2 {
+    color: var(--text-primary);
+    margin-bottom: 20px;
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.contact-info-section {
+    margin-top: 40px;
+}
+
+.contact-info-section h2 {
+    color: var(--text-primary);
+    margin-bottom: 20px;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: var(--text-secondary);
+}
+
+.contact-info-item i {
+    color: var(--text-primary); /* Use primary color for icons */
+    margin-right: 15px;
+    font-size: 1rem; /* Make icon smaller */
+    background-color: var(--secondary-light-gray);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    
+}
+
+.contact-info-item p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+    .contact-image {
+        margin-top: 30px;
+    }
+}
