@@ -1,0 +1,114 @@
+.packages-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.packages-section h2 {
+    text-align: center;
+    color: var(--primary-dark-blue);
+    margin-bottom: 10px;
+}
+
+.packages-section p {
+    text-align: center;
+    color: var(--text-grey);
+    margin-bottom: 40px;
+}
+
+.package-category {
+    margin-bottom: 60px;
+}
+
+.package-category h3 {
+    color: var(--primary-dark-blue);
+    margin-bottom: 20px;
+}
+
+.package-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.package-card {
+    border: 2px solid var(--text-primary);
+    border-radius: 8px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.package-card.premium {
+    background-color: var(--primary-deep-blue);
+    color: var(--secondary-white);
+}
+
+.package-card h4 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.package-card .price {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.package-card .price span {
+    font-size: 0.5em;
+    font-weight: normal;
+}
+
+.package-card.premium .price,
+.package-card.premium h4 {
+    color: var(--secondary-white);
+}
+
+.package-card p {
+    font-size: 0.9em;
+    color: var(--text-grey);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.package-card.premium p {
+    color: var(--secondary-white);
+}
+
+.package-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.package-card ul li {
+    margin-bottom: 10px;
+    color: var(--text-grey);
+}
+
+.package-card.premium ul li {
+    color: var(--secondary-white);
+}
+
+.package-card ul li::before {
+    content: "•"; /* Using a simple bullet for now, could be an icon */
+    color: var(--primary-accent); /* Use an accent color for bullets */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.package-card.premium ul li::before {
+     color: var(--secondary-white); /* White bullets for premium */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .package-cards {
+        grid-template-columns: 1fr;
+    }
+}
