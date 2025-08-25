@@ -1,0 +1,67 @@
+.testimonials-page .testimonials-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testimonials-page .testimonials-intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.testimonials-page .testimonials-intro p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+}
+
+.testimonial-card {
+    background-color: var(--secondary-white);
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.testimonials-list .card-title {
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+}
+
+.testimonial-card h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.testimonial-card .btn {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: var(--secondary-light-gray);
+    border: none;
+    color: var(--text-primary);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.testimonial-card .btn:hover {
+    background-color: var(--primary-deep-blue);
+    color: var(--text-primary);
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .testimonial-card {
+        padding: 40px;
+    }
+}
