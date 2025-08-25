@@ -1,0 +1,86 @@
+.login-page .container {
+    max-width: 960px;
+}
+
+.login-section {
+    background-color: var(--secondary-white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.login-section h1 {
+    color: var(--text-primary);
+    margin-bottom: 20px;
+}
+
+.login-form .form-label {
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+.login-form .form-control {
+    border-color: var(--text-muted);
+    background-color: var(--secondary-light-gray); /* Input background color */
+}
+
+.login-form .form-control::placeholder {
+    color: var(--text-muted); /* Placeholder text color */
+}
+
+.login-form .btn-primary {
+    background-color: var(--primary-deep-blue);
+    border-color: var(--primary-deep-blue);
+}
+
+.login-form .btn-primary:hover {
+    background-color: #07305d; /* darker shade */
+    border-color: #07305d;
+}
+
+.login-links {
+    margin-top: 15px;
+}
+
+.login-links a {
+    color: var(--primary-deep-blue);
+    text-decoration: none;
+}
+
+.login-links a:hover {
+    text-decoration: underline;
+}
+
+.signup-link {
+    margin-top: 20px;
+    color: var(--text-secondary);
+}
+
+.signup-link a {
+    color: var(--primary-deep-blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+
+.login-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 991.98px) {
+    .login-image-container {
+        margin-top: 30px;
+    }
+}
