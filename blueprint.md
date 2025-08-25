@@ -68,6 +68,13 @@ interactive-code-generator/
 10. **Documentation (Optional but Recommended):** Create a README file explaining how to use the application and its features.
 
 **UI Inspiration (Based on provided image):**
+- Remove social media links from the footer as they are not in the design and not specified in the requirements.
+
+- Call to Action Section Styling:
+    - Removed background color.
+    - Changed button background to the primary color defined in the color palette.
+    - Made the `h2` heading bold.
+    - Made the `p` font size slightly smaller.
 
 *   The layout should be clean and organized, with a clear separation between the input area, options, and preview.
 *   Utilize a color scheme that is easy on the eyes, especially for the code preview (consider both light and dark themes).
