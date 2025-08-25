@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cta-section h2 {
-    color: var(--primary-deep-blue); /* Use variable for CTA heading color */
+    color: var(--primary-deep-blue);
 }
 
 .cta-section .btn-dark {
