@@ -1,0 +1,75 @@
+.portfolio-intro {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.portfolio-intro h1 {
+    margin-bottom: 15px;
+}
+
+.portfolio-filters {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.portfolio-filters .btn {
+    margin: 5px;
+    border-radius: 20px; /* Pill shape for buttons */
+    padding: 8px 20px;
+    font-size: 0.9em;
+    color: var(--text-secondary);
+    border-color: var(--border-light-grey);
+}
+
+.portfolio-filters .btn:hover {
+    background-color: var(--primary-deep-blue);
+    color: var(--secondary-white);
+    border-color: var(--primary-deep-blue);
+}
+
+.portfolio-filters .btn.active {
+    background-color: var(--primary-deep-blue);
+    color: var(--secondary-white);
+    border-color: var(--primary-deep-blue);
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    background: none;
+    box-shadow: none;
+    font-weight: bold; /* Make text bold */
+ color: grey; /* Default color for inactive tabs */
+}
+.nav-tabs .nav-link.active {
+    color: black; /* Color for the active tab */
+}
+
+.portfolio-gallery .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px; /* Counter negative margin from col- */
+    margin-left: -10px;  /* Counter negative margin from col- */
+}
+
+.portfolio-gallery .col-md-4,
+.portfolio-gallery .col-sm-6,
+.portfolio-gallery .col-12 {
+    padding-right: 10px; /* Add padding between columns */
+    padding-left: 10px;  /* Add padding between columns */
+    margin-bottom: 20px; /* Space between rows */
+}
+
+
+.portfolio-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.03);
+}
