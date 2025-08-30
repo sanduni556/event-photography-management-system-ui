@@ -13,6 +13,30 @@
     color: var(--text-muted);
 }
 
+/* Star Rating Styles */
+.stars-rating {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 15px;
+}
+
+.stars-rating i {
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.stars-rating .fas.fa-star {
+    color: #ffc107; /* Bootstrap warning yellow for filled stars */
+}
+
+.stars-rating .fas.fa-star-half-alt {
+    color: #ffc107; /* Bootstrap warning yellow for half stars */
+}
+
+.stars-rating .far.fa-star {
+    color: #e9ecef; /* Light gray for empty stars */
+}
+
 .testimonial-card {
     background-color: var(--secondary-white);
     border: 1px solid #e0e0e0;
@@ -20,6 +44,17 @@
     padding: 30px;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card:hover .stars-rating .fas.fa-star,
+.testimonial-card:hover .stars-rating .fas.fa-star-half-alt {
+    color: #ff9800; /* Slightly more orange on hover */
 }
 
 .testimonials-list .card-title {
