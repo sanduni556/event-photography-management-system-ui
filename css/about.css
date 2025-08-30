@@ -1,20 +1,12 @@
-:root {
-    --primary-blue: #007bff;
-    --primary-deep-blue: #0f203b;
-    --secondary-gray: #f8f9fa;
-    --secondary-white: #ffffff;
-    --text-dark: #343a40;
-    --text-muted: #6c757d;
-    --border-color: #dee2e6;
-}
+/* Import variables from main variables.css file */
 
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: var(--secondary-gray);
-    color: var(--text-dark);
+    background-color: var(--secondary-light-gray);
+    color: var(--text-secondary);
 }
 
 .container {
@@ -57,13 +49,13 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: var(--text-dark);
+    color: var(--text-secondary);
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: var(--primary-blue);
+    color: var(--primary-deep-blue);
 }
 
 .login-button {
@@ -144,12 +136,12 @@ section h2 {
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     text-align: center;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--text-muted);
 }
 
-.value-card .icon {
+.value-card .fas {
     font-size: 2em;
-    color: var(--primary-blue);
+    color: var(--primary-deep-blue);
     margin-bottom: 15px;
 }
 
@@ -184,10 +176,10 @@ section h2 {
 
 /* Footer */
 footer {
-    background-color: var(--secondary-gray);
+    background-color: var(--secondary-light-gray);
     padding: 40px 0 20px 0;
     text-align: center;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid var(--text-muted);
 }
 
 footer .container {
@@ -211,12 +203,12 @@ footer .container {
 
 .footer-nav ul li a {
     text-decoration: none;
-    color: var(--text-dark);
+    color: var(--text-secondary);
     transition: color 0.3s ease;
 }
 
 .footer-nav ul li a:hover {
-    color: var(--primary-blue);
+    color: var(--primary-deep-blue);
 }
 
 .social-icons {
@@ -224,7 +216,7 @@ footer .container {
 }
 
 .social-icons a {
-    color: var(--text-dark);
+    color: var(--text-secondary);
     font-size: 1.2em;
     margin: 0 10px;
     text-decoration: none;
@@ -232,7 +224,7 @@ footer .container {
 }
 
 .social-icons a:hover {
-    color: var(--primary-blue);
+    color: var(--primary-deep-blue);
 }
 
 footer p {

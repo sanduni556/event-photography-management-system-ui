@@ -101,6 +101,10 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-deep-blue); /* Use variable for icon color */
 }
 
+.services-section .fas {
+    color: var(--primary-deep-blue); /* Use variable for Font Awesome icon color */
+}
+
 
 /* Call to Action Section */
 .cta-section {
@@ -140,6 +144,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer .social-icons a {
     font-size: 1.5rem;
+    color: var(--text-muted); /* Use variable for social icon color */
+}
+
+.footer .social-icons a:hover {
+    color: var(--primary-deep-blue); /* Use variable for social icon hover color */
 }
 
 .footer .list-inline-item a {
